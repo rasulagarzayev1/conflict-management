@@ -61,7 +61,6 @@ function ConflictManagement() {
 	};
 
 	const onFormSubmit = (e) => {
-		console.log(e.target.StrategicMotivation.value);
 		e.preventDefault();
 		setFilteredUserStories(
 			filteredUserStories.map((object) => {
@@ -76,8 +75,6 @@ function ConflictManagement() {
 		sortByTwo(filteredUserStories);
 		setIsModalOpen(true);
 		setSelectedStoryContent(filteredUserStories[filteredUserStories.length - 1].Content);
-		console.log(filteredUserStories[filteredUserStories.length - 1].Content);
-		//alert(filteredUserStories[filteredUserStories.length - 1].Content);
 	};
 
 	const sortByTwo = (arr = []) => {

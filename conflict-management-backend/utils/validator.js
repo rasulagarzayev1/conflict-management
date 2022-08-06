@@ -7,7 +7,6 @@ const isStringValid = (str) => {
 };
 
 const isValidNumber = (num) => {
-	console.log(/^[0-9]+$/.test(num));
 	return /^[0-9]+$/.test(num);
 };
 

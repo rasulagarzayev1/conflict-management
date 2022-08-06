@@ -12,13 +12,7 @@ const isValidNumber = (num) => {
 	return /^[0-9]+$/.test(num);
 };
 
-const isPublishedYearCorrect = (year) => {
-	const currentYear = new Date().getFullYear();
-	return currentYear >= year;
-};
-
 module.exports = {
 	isStringValid,
 	isValidNumber,
-	isPublishedYearCorrect,
 };
