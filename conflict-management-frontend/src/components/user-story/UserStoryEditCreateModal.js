@@ -75,6 +75,16 @@ const EditCreateModal = ({ modalTitle, userStory, onReload, isModalOpen, setIsMo
 				draggable: true,
 				progress: undefined,
 			});
+		} else {
+			toast.error('Please fill all fields and try again!', {
+				position: 'top-right',
+				autoClose: 2000,
+				hideProgressBar: false,
+				closeOnClick: true,
+				pauseOnHover: true,
+				draggable: true,
+				progress: undefined,
+			});
 		}
 	};
 
